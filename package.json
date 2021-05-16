@@ -1,0 +1,21 @@
+{
+  "name": "tp10",
+  "version": "1.0.0",
+  "description": "Consultas basicas de SQL y estructuras de coneccion a express",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-myconnection": "^1.0.4",
+    "express-validator": "^6.11.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

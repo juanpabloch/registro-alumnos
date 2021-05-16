@@ -1,0 +1,422 @@
+:root{
+    --rosa: #EB5779;
+    --celeste: #D9EEF3;
+    --about-imagen: 'https://assets.website-files.com/5d5e2ff58f10c53dcffd8683/5d99f8f54aefbe008694b781_composition-19.svg';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.mb-20{
+    margin-bottom: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+    margin-bottom: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        li{
+            list-style: none;
+            font-size: 1.5rem;
+            margin-left: 20px;
+            text-transform: uppercase;
+        }
+
+    nav span{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+        
+.container, .container-lista{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.logo h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.logo img{
+    width: 35px;
+}
+
+/*index*/
+.container-index, .container-about{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container-index .info{
+    padding: 20px 50px;
+    height: 80vh;
+    background-image: url('https://assets.website-files.com/5d5e2ff58f10c53dcffd8683/5da4bd9196a90c1ed77a7792_composition-23.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-index h1, .container-about h1{
+    text-align: left;
+    font-size: 3rem;
+    margin: 30px 0;
+    line-height: 1;
+    font-weight: 300;
+}
+.container-index p, .container-about p{
+    max-width: 800px;
+    font-size: 1.1rem;
+}
+.container-index span, .container-about span{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.mb-50{
+    margin-bottom: 40px;
+}
+.inscribite{
+    border: 2px solid #000;
+    padding: 5px 18px;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+    .inscribite:hover{
+        color: var(--rosa);
+        border: 2px solid var(--rosa);
+    }
+
+/* lista alumnos */
+.container-lista{
+    height: 80vh;
+    padding: 20px;
+}
+.container-lista h1{
+    text-align: left;
+    margin-left: 20px;
+}
+    .container-lista img{
+        position: absolute;
+        top: 170px;
+        right: 5%;
+        z-index: -1;
+        max-width: 900px;
+        filter: opacity(80%);
+    }
+    .container-lista span{
+        font-weight: 300;
+    }
+.lista{
+    padding: 20px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.479);
+}
+
+.alumno{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+    .alumno .nombre{
+        width: 300px;
+    }   
+    .alumno .nombre p{
+        text-transform: capitalize;
+    }
+    .alumno .nombre p:first-child{
+        margin-right: 15px;
+    }
+    .alumno .email{
+        width: 300px;
+    }
+    button{
+        cursor: pointer;
+        background: transparent;
+        font-size: 1rem;
+        border: 2px solid #000;
+        padding: 5px;
+    }
+        button:hover{
+            color: var(--rosa);
+            border: 2px solid var(--rosa);
+        }
+
+/* alumno */
+.alumno-info{
+    padding: 5px;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+    .alumno-info h2{
+        font-size: 3rem;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        line-height: 1;
+    }
+    
+    .nombre-alumno{
+        text-transform: capitalize;
+        font-weight: 300;
+        margin-left: 0;
+    }
+        .info-alumno{
+            margin-bottom: 100px;
+            font-size: 1.2rem;
+
+        }
+            .info-alumno p{
+                /* margin-bottom: 20px; */
+            }
+            .info-alumno .spanInfo{
+                font-weight: 600;
+                margin-left: 20px;
+            }
+                
+
+    .alumno-info .botones{
+        width: 100%;
+        
+    }
+        .botones .btn{
+            border: 1px solid #000;
+            padding: 8px 15px;
+            margin-right: 20px;
+            font-size: 1.2rem;
+            
+        }
+
+#cerrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 40px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    color: var(--rosa);
+    border: none;
+    cursor: pointer;
+}
+
+/* showcard */
+#showCard{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    background-color: #d7f4fb;
+    width: 70vw;
+    height: 70vh;
+    display: none;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    
+}
+
+/* formulario */
+#formBody{
+    background: url('https://images.blush.design/kgvxPLb8JAQaI2uSYqMV?h=920&auto=compress&cs=srgb');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: -50px;
+    background-position-y: 100px;
+}
+#formulario{
+    background: #d7f4fbc0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+    #formulario > *{
+        font-size: 1.2rem;
+        font-weight: 300;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 7px;
+        border: 3px solid #c1ebf5;
+    }
+        #formulario [type='submit']{
+            cursor: pointer;
+            border: 2px solid #000;
+            padding: 5px 18px;
+            font-size: 1.3rem;
+            font-weight: 400;
+            max-width: 100px;
+            background: transparent;
+        }
+        #formulario [type='submit']:hover{
+            color: var(--rosa);
+            border: 2px solid var(--rosa);
+        }
+
+        #formulario .radio{
+            border: none;
+        }
+
+        #errores{
+            max-width: 600px;
+            margin: 20px auto;
+        }
+            #errores li{
+                color: #EB5779;
+                list-style: circle;
+                text-transform: none;
+                font-size: 1.4rem;
+            }
+
+/* about */
+.container-about .info{
+    padding: 20px 50px;
+    height: 80vh;
+    background-image: url('https://assets.website-files.com/5d5e2ff58f10c53dcffd8683/5d99f8f54aefbe008694b781_composition-19.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-about .info > *{
+    max-width: 500px;
+}
+
+.container-about .contain{
+    background-color: #e6faffef;
+    padding: 10px 20px 40px 20px;
+}
+.container-about a{
+    color: #EB5779;
+    font-weight: 600;
+}
+
+/* media queries */
+@media screen and (max-width: 500px) {
+    :root{
+        font-size: 13px;
+    }
+    body{
+        overflow: hidden;
+    }
+/*home*/
+    nav{
+        padding: 20px 10px;
+        margin-bottom: 0px;
+    }
+    nav .logo{
+        flex-wrap: nowrap;
+    }
+    nav .logo img{
+        max-width: 40px;
+    }
+    li{
+        margin-left: 10px;
+    }
+
+    .container-index .info{
+        padding: 20px 30px;
+        background-size: cover;
+        background-position: -80px 70px;
+        height: 90vh;
+    }
+    .container-index h1{
+        margin: 20px 0;
+        margin-top: 0;
+    }
+
+
+    /*form*/
+    #formulario{
+        margin-top: 20px;
+        background: #d7f4fb80;
+    }
+
+    /* lista */
+    .container-lista img{
+        top: 300px;
+        right: 0;
+        max-width: 550px;
+    }
+    .email{
+        display: none;
+    }
+
+    #showCard{
+        top: 10%;
+        left: 5%;
+        background-color: #d7f4fb;
+        width: 90vw;
+        height: 80vh;
+        padding: 10px;
+
+    }
+        .alumno-info{
+            padding: 10px;
+            max-width: 300px;
+            margin: 5% auto;
+        }
+
+    /* about */
+.container-about .info{
+    padding: 20px 20px;
+    height: 90vh;
+    background-position: center;
+}
+
+.container-about .info > *{
+    max-width: 500px;
+}
+
+.container-about .contain{
+    background-color: #e6faffe7;
+    padding: 10px 20px 40px 20px;
+}
+.container-about a{
+    color: #EB5779;
+    font-weight: 600;
+}
+
+}

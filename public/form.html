@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="formBody">
+    <nav>
+        <div class="logo flex">
+            <h1>EDUC</h1>
+            <img src="img/logotype.svg" alt="logo">
+        </div>
+        <ul>
+            <li><a href="/lista"><span>L</span>ista</a></li>
+            <li><a href="/about"><span>A</span>bout</a></li>
+            <li><a href="/"><span>H</span>ome</a></li>
+        </ul>
+    </nav>
+
+    <form action="/inscripcion" method="post" id="formulario">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+        <input type="number" name="telefono" id="telefono" placeholder="Telefono">
+        <input type="email" name="email" id="email" placeholder="Email">
+
+        <select name="provincia" id="provincias">
+            <option value="">Seleccionar Provincia...</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Buenos Aires Capital">Buenos Aires Capital</option>
+            <option value="Catamarca">Catamarca</option>
+            <option value="Chaco">Chaco</option>
+            <option value="Chubut">Chubut</option>
+            <option value="Cordoba">Cordoba</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Entre Rios">Entre Rios</option>
+            <option value="Formosa">Formosa</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="La Pampa">La Pampa</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Neuquen">Neuquen</option>
+            <option value="Rio Negro">Rio Negro</option>
+            <option value="Salta">Salta</option>
+            <option value="San Juan">San Juan</option>
+            <option value="San Luis">San Luis</option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Santiago del Estero">Santiago del Estero</option>
+            <option value="Tierra del Fuego">Tierra del Fuego</option>
+            <option value="Tucuman">Tucuman</option>
+        </select>
+
+        <select name="curso" id="curso">
+            <option value="">Seleccionar curso...</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="html">HTML y CSS</option>
+        </select>
+
+        <div class="radio">
+            <label for="turnoM">Mañana</label>
+            <input type="radio" name="disponibilidad" id="turnoM" value="Mañana" checked>
+            <label for="turnoT">Tarde</label>
+            <input type="radio" name="disponibilidad" id="turnoT" value="Tarde">
+        </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div id="errores">
+        <ul>
+            
+        </ul>
+    </div>
+    <script src="js/validaciones.js"></script>
+</body>
+</html>
