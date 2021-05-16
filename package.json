@@ -4,6 +4,7 @@
   "description": "Consultas basicas de SQL y estructuras de coneccion a express",
   "main": "index.js",
   "scripts": {
+    "start": "node .",
     "dev": "nodemon server.js"
   },
   "keywords": [],
